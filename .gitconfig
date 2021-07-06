@@ -1,0 +1,12 @@
+[user]
+	name = Sonya Huang
+[push]
+        default = matching
+[color]
+        ui = true
+        status = true
+[pager]
+	branch = false
+[core]
+	pager = less -XF
+	editor = /usr/bin/vim
