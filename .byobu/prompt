@@ -1,0 +1,4 @@
+. $BYOBU_PREFIX/share/byobu/profiles/bashrc  #byobu-prompt#
+
+# use base name of working dir instead of full path
+export PS1=${PS1/\\w/\\W}
