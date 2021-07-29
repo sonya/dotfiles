@@ -8,4 +8,13 @@ export LS_COLORS
 source ~/bin/git-prompt.sh
 export PROMPT_COMMAND='__git_ps1 "\[\e[38;5;63m\]\u\[\e[38;5;11m\]@\[\e[38;5;201m\]\h\[\e[38;5;11m\]:\[\e[38;5;81m\]\w\[\e[38;5;11m\]" "\\\$\[\e[00m\] "'
 
-eval $(ssh-agent)
+# aliases
+
+alias dcx="/usr/local/bin/docker-compose exec"
+alias dcs="/usr/local/bin/docker-compose ps"
+alias dcdown="/usr/local/bin/docker-compose down"
+alias dclog="/usr/local/bin/docker-compose logs -f"
+
+if [ ! -z "$PS1" ]; then
+        eval $(ssh-agent)
+fi
