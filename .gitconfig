@@ -10,3 +10,5 @@
 [core]
 	pager = less -XF
 	editor = /usr/bin/vim
+[init]
+        defaultBranch = main
